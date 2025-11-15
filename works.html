@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Works | Dung Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="./index.html"><img src="./img/logo.png" alt="Logo" /></a>
+    </div>
+    <nav class="nav-links" id="nav-links">
+      <a href="./works.html" class="active">Works</a>
+      <a href="./hobbies.html">Hobbies</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+  </header>
+
+  <!-- Work Section -->
+  <section class="works-section">
+    <h1>Work</h1>
+
+    <div class="work-item">
+      <img src="./img/dashboard.jpg" alt="Designing Dashboards">
+      <div class="work-text">
+        <span class="year">2020</span> <span class="tag">Dashboard</span>
+        <h2>Designing Dashboards</h2>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+      </div>
+    </div>
+
+    <div class="work-item">
+      <img src="./img/portrait.jpg" alt="Vibrant Portraits of 2020">
+      <div class="work-text">
+        <span class="year">2018</span> <span class="tag">Illustration</span>
+        <h2>Vibrant Portraits of 2020</h2>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const navLinks = document.getElementById('nav-links');
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Dung Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="./index.html"><img src="./img/logo.png" alt="Logo" /></a>
+    </div>
+    <nav class="nav-links" id="nav-links">
+      <a href="./works.html">Works</a>
+      <a href="./hobbies.html">Hobbies</a>
+      <a href="./contact.html" class="active">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <p class="contact-intro">
+      Feel free to reach out if you’d like to collaborate, ask questions, or just say hello 👋
+    </p>
+
+    <form class="contact-form" action="#" method="post">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div class="contact-social">
+      <p>Or find me on:</p>
+      <a href="mailto:youremail@example.com">📧 Email</a> |
+      <a href="https://github.com/yourusername" target="_blank">💻 GitHub</a> |
+      <a href="https://facebook.com/yourprofile" target="_blank">📘 Facebook</a>
+    </div>
+  </section>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const navLinks = document.getElementById('nav-links');
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
