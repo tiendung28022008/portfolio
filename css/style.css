@@ -43,6 +43,9 @@ body {
   color: #007bff;
 }
 
+.nav-links a.active {
+    color: #007bff;
+}
 /* --- Mobile Menu Button --- */
 .menu-btn {
   display: none;
